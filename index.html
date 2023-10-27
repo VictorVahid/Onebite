@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
     <title>PetLife</title>
   </head>
   <body>
     <header>
       <a href="index.html">
-        <img src="img/logo.svg" alt="PetLife" />
+        <img src="img/logo-white.svg" alt="PetLife" />
       </a>
       <nav>
         <a href="#inicio">Início</a>
         <a href="#clinica">Clínica</a>
         <a href="#farmacia">Farmacia</a>
         <a href="#duvidas">Dúvidas</a>
-        <a href="contato.html" target="_blank">Contato</a>
       </nav>
     </header>
     <main>
@@ -24,23 +30,26 @@
 
         <div>
           <h1>Ornare dictum nam quam pede</h1>
-          <p>
+          <p class="paragrafo">
             Ultricies ornare leo placerat nisi natoque tortor eget per at. A
             quisque gravida neque morbi nunc nostra volutpat ultrices sociosqu
             lacinia iaculis. Aliquam nunc mi congue orci senectus nascetur
             molestie est posuere nullam ad. Litora consectetur sapien ex viverra
             mollis pretium class taciti eu.
           </p>
-          <a href="https://wa.me/559284584690" target="_blank"
+          <a class="botao" href="https://wa.me/559284584690" target="_blank"
             >Marque uma consulta
           </a>
-          <a href="#clinica">Conheça nossa Clínica</a>
+          <a class="botao-transparente" href="#clinica"
+            >Conheça nossa Clínica</a
+          >
         </div>
+        <img class="absolute" src="img/shape.svg" alt="" />
       </section>
       <section id="clinica">
         <div>
           <h2>Auctor letius ac ipsum conubia venenatis</h2>
-          <p>
+          <p class="paragrafo">
             Aliquet aenean maximus donec fermentum convallis habitant. Placerat
             ut nam porttitor cursus nunc platea letius vitae nisl. Aenean
             himenaeos magna placerat tempor pede. Enim leo scelerisque proin
@@ -65,7 +74,7 @@
           alt="Imagen Petshop/Farmacia"
           loading="lazy"
         />
-        <p>
+        <p class="paragrafo">
           Tellus primis inceptos volutpat sollicitudin velit enim pede penatibus
           nisi orci. Pretium nisi nisl sit felis donec. Pellentesque iaculis
           imperdiet elit faucibus venenatis convallis. Praesent tincidunt ad
@@ -80,40 +89,43 @@
         <img src="img/faq-img.svg" alt="Faq" loading="lazy" />
         <div>
           <h2>Ficou com alguma dúvida?</h2>
-          <div>
+          <div class="duvida">
             <h3>Quam tincidunt dolor a fringilla dignissim</h3>
             <img src="img/arrow-down.svg" alt="" />
-            <p>
+            <p class="paragrafo">
               Rutrum fusce vestibulum conubia justo accumsan placerat non
               viverra leo hac donec a pede amet ridiculus magnis condimentum ex
               tempus nostra feugiat mi nec in quis iaculis fames habitasse
               suscipit hendrerit ligula posuere lacus aliquam eu pellentesque
               malesuada egestas metus
             </p>
-
+          </div>
+          <div class="duvida">
             <h3>Quam tincidunt dolor a fringilla dignissim</h3>
             <img src="img/arrow-down.svg" alt="" />
-            <p>
+            <p class="paragrafo">
               Rutrum fusce vestibulum conubia justo accumsan placerat non
               viverra leo hac donec a pede amet ridiculus magnis condimentum ex
               tempus nostra feugiat mi nec in quis iaculis fames habitasse
               suscipit hendrerit ligula posuere lacus aliquam eu pellentesque
               malesuada egestas metus
             </p>
-
+          </div>
+          <div class="duvida">
             <h3>Quam tincidunt dolor a fringilla dignissim</h3>
             <img src="img/arrow-down.svg" alt="" />
-            <p>
+            <p class="paragrafo">
               Rutrum fusce vestibulum conubia justo accumsan placerat non
               viverra leo hac donec a pede amet ridiculus magnis condimentum ex
               tempus nostra feugiat mi nec in quis iaculis fames habitasse
               suscipit hendrerit ligula posuere lacus aliquam eu pellentesque
               malesuada egestas metus
             </p>
-
+          </div>
+          <div class="duvida">
             <h3>Quam tincidunt dolor a fringilla dignissim</h3>
             <img src="img/arrow-down.svg" alt="" />
-            <p>
+            <p class="paragrafo">
               Rutrum fusce vestibulum conubia justo accumsan placerat non
               viverra leo hac donec a pede amet ridiculus magnis condimentum ex
               tempus nostra feugiat mi nec in quis iaculis fames habitasse
@@ -130,7 +142,7 @@
         <p>Massa consequat pede nostra sed facilisi quisque</p>
       </div>
       <div>
-        <strong>Links rápidos</strong>
+        <strong class="titulo">Links rápidos</strong>
         <nav>
           <a href="#inicio">Início</a>
           <a href="#clinica">Clínica</a>
@@ -140,14 +152,24 @@
         </nav>
       </div>
       <div>
-        <strong>Encontre-nos</strong>
-        <p>Whatsapp:<a href="https://wa.me/559284584690" target="_blank">(92)8458-4690</a></p>
-        <p>Email: <a href="mailto:contato@petlife.com" target="_blank">contato@petlife.com</a></p>
+        <strong class="titulo">Encontre-nos</strong>
+        <p>
+          Whatsapp:<a href="https://wa.me/559284584690" target="_blank"
+            >(92)8458-4690</a
+          >
+        </p>
+        <p>
+          Email:
+          <a href="mailto:contato@petlife.com" target="_blank"
+            >contato@petlife.com</a
+          >
+        </p>
         <p>Endereço: Av.7 de setembro, n° 421, Centro</p>
       </div>
     </footer>
-    <div>
-      Desenvolvido por <a href="https://github.com/VictorVahid" target="_blank">@Victor Vahid</a>
+    <div id="copyright">
+      Desenvolvido por
+      <a href="https://github.com/VictorVahid" target="_blank">@Victor Vahid</a>
       na trilha Start na Programação da OneBitCode
     </div>
   </body>
